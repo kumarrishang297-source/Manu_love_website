@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <title>For Manu ❤️</title>
+  <style>
+    :root { --red:#d51f3b; --deep:#080808; --cream:#f5e9e9; --muted:#c6b6b8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0; color:var(--cream); background:
+      radial-gradient(ellipse at 50% 0%, rgba(150,12,36,.24), transparent 48%),
+      linear-gradient(180deg,#090909 0%,#100609 55%,#080808 100%);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .hero { min-height:100svh; display:grid; place-items:center; text-align:center; padding:48px 20px; position:relative; overflow:hidden; }
+    .hero:before,.hero:after { content:"✦"; position:absolute; color:#8d1428; opacity:.45; font-size:30px; }
+    .hero:before { top:13%; left:12%; } .hero:after { bottom:15%; right:13%; }
+    .eyebrow { letter-spacing:.28em; text-transform:uppercase; color:#e05b70; font:11px Arial,sans-serif; }
+    h1 { font-size:clamp(48px,10vw,94px); line-height:.98; margin:22px 0 12px; font-weight:normal; }
+    h1 span { color:var(--red); font-style:italic; }
+    .subtitle { max-width:620px; margin:18px auto 28px; color:#e1d0d2; font-size:clamp(17px,3vw,22px); line-height:1.7; }
+    .button { display:inline-block; border:1px solid #a51a32; color:#fff; background:linear-gradient(135deg,#a81731,#5d0b1b); border-radius:999px; padding:14px 24px; cursor:pointer; font:13px Arial,sans-serif; letter-spacing:.08em; text-decoration:none; box-shadow:0 0 28px #a8173138; }
+    .music { position:fixed; z-index:5; right:16px; bottom:16px; border:1px solid #6f1a2a; background:#14090c; color:#f8e8eb; border-radius:999px; padding:11px 16px; cursor:pointer; font:12px Arial,sans-serif; box-shadow:0 5px 24px #0009; }
+    section { padding:76px 20px; max-width:1000px; margin:auto; }
+    .section-title { text-align:center; font-size:clamp(30px,6vw,46px); font-weight:normal; margin:0 0 12px; }
+    .section-title span { color:var(--red); }
+    .intro { text-align:center; color:var(--muted); line-height:1.7; margin:0 auto 34px; max-width:600px; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+    .photo { background:#160b0e; border:1px solid #4c1722; padding:10px 10px 18px; transform:rotate(var(--tilt)); box-shadow:0 12px 30px #0007; }
+    .photo img { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; background:linear-gradient(135deg,#241116,#10090b); }
+    .photo p { text-align:center; color:#e9cfd4; margin:13px 0 0; font-style:italic; }
+    .letter { max-width:720px; margin:auto; padding:clamp(24px,5vw,48px); border:1px solid #641a2a; background:linear-gradient(145deg,#16090d,#0c090a); box-shadow:0 20px 60px #0007; line-height:1.9; color:#e9dadd; font-size:18px; }
+    .letter .salute { color:#ed7184; font-style:italic; font-size:25px; }
+    .surprise { text-align:center; }
+    #secret { display:none; max-width:600px; margin:25px auto 0; color:#f0cbd2; font-size:20px; line-height:1.7; }
+    footer { text-align:center; padding:36px 18px 60px; color:#9f858a; font:12px Arial,sans-serif; letter-spacing:.08em; }
+    .heart { position:fixed; bottom:-30px; color:#c51b39; pointer-events:none; animation:float 7s linear forwards; z-index:2; opacity:.7; }
+    @keyframes float { to { transform:translateY(-110vh) rotate(25deg); opacity:0; } }
+    @media (prefers-reduced-motion: reduce) { *,*:before,*:after { scroll-behavior:auto!important; animation:none!important; } }
+  </style>
+</head>
+<body>
+  <audio id="song" src="assets/your-authorized-song.mp3" preload="none" loop></audio>
+  <button class="music" id="musicBtn" type="button">♫ Play our song</button>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">A little world made just for you</div>
+      <h1>For my <span>Manu</span> ❤️</h1>
+      <p class="subtitle">For the girl who loves me endlessly, drives me crazy sometimes, but still makes my world a beautiful place.</p>
+      <a class="button" href="#memories">Open your little world ♥</a>
+    </div>
+  </header>
+
+  <section id="memories">
+    <h2 class="section-title">Our <span>Memories</span></h2>
+    <p class="intro">A few little moments I never want to forget. Replace these sample image names with your own photos.</p>
+    <div class="gallery">
+      <div class="photo" style="--tilt:-2deg"><img src="assets/photo1.jpg" alt="Our memory one"><p>One of my favourite moments</p></div>
+      <div class="photo" style="--tilt:1.5deg"><img src="assets/photo2.jpg" alt="Our memory two"><p>A memory close to my heart</p></div>
+      <div class="photo" style="--tilt:-1deg"><img src="assets/photo3.jpg" alt="Our memory three"><p>More moments, more smiles</p></div>
+      <div class="photo" style="--tilt:2deg"><img src="assets/photo4.jpg" alt="Another special memory"><p>And many more to come ❤️</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">A letter <span>for you</span></h2>
+    <div class="letter">
+      <div class="salute">Dear Manu,</div>
+      <p>I may not always find the perfect words, but I hope you never doubt how special you are to me. Thank you for the laughter, the little arguments, the care, and all the ordinary moments that become beautiful because you're part of them.</p>
+      <p>You are my favourite person to tease, my favourite person to talk to, and the one who makes even a normal day feel memorable.</p>
+      <p>Keep smiling, keep being your wonderfully unique self. This little website is just a small reminder that you mean a lot to me.</p>
+      <p>With lots of love,<br><span class="salute">From your love,<br>Rishang ❤️</span></p>
+    </div>
+  </section>
+
+  <section class="surprise">
+    <h2 class="section-title">One little <span>surprise</span></h2>
+    <p class="intro">There is one more thing I want you to know…</p>
+    <button class="button" id="surpriseBtn" type="button">Tap for a surprise ❤️</button>
+    <p id="secret">No matter how much you trouble me, you're still one of my favourite parts of life. Never forget that, Manu. ❤️</p>
+  </section>
+
+  <footer>MADE WITH LOVE · JUST FOR MANU ❤️</footer>
+
+  <script>
+    const song = document.getElementById('song');
+    const musicBtn = document.getElementById('musicBtn');
+    musicBtn.addEventListener('click', async () => {
+      try {
+        if (song.paused) { await song.play(); musicBtn.textContent = 'Ⅱ Pause our song'; }
+        else { song.pause(); musicBtn.textContent = '♫ Play our song'; }
+      } catch (e) {
+        musicBtn.textContent = 'Add an authorized song file first';
+      }
+    });
+    document.getElementById('surpriseBtn').addEventListener('click', () => {
+      document.getElementById('secret').style.display = 'block';
+    });
+    function makeHeart() {
+      const h = document.createElement('span');
+      h.className = 'heart'; h.textContent = Math.random() > .5 ? '♥' : '❤';
+      h.style.left = Math.random() * 100 + 'vw';
+      h.style.fontSize = (12 + Math.random() * 16) + 'px';
+      h.style.animationDuration = (5 + Math.random() * 4) + 's';
+      document.body.appendChild(h);
+      setTimeout(() => h.remove(), 9500);
+    }
+    setInterval(makeHeart, 1200);
+  </script>
+</body>
+</html>
